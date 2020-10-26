@@ -1,7 +1,8 @@
 import React from "react";
 import { Card, CardBody, Row, Col } from "reactstrap";
 import PanelHeader from "components/PanelHeader/PanelHeader.js";
-import ReactMarkDown from "react-markdown";
+import ReactMarkdown from "react-markdown";
+import gfm from 'remark-gfm'
 const axios = require('axios');
 class FAQ extends React.Component {
 
@@ -10,7 +11,7 @@ class FAQ extends React.Component {
 
     this.state = {
       content: null,
-      urlGitHubFile: "https://github.com/serverless/serverless/blob/master/docs/getting-started.md"
+      urlGitHubFile: "https://bryantson.github.io/reactjs-tutorials/react-markdown-viewer/docs/walkthrough.md"
     }
   }
 
@@ -27,6 +28,7 @@ class FAQ extends React.Component {
 
   }
 
+  // render(<ReactMarkdown># Hello, * world * !</ReactMarkdown >, document.body)
   render() {
 
     const { content } = this.state;
@@ -39,8 +41,8 @@ class FAQ extends React.Component {
             <Col md={12}>
               <Card>
                 <CardBody>
-                  {/* <ReactMarkDown source={content} /> */}
-                  <div dangerouslySetInnerHTML={{ __html: this.state.content }}></div>
+                  <ReactMarkdown escapeHtml={false} source={content} />
+                  {/* <div dangerouslySetInnerHTML={{ __html: this.state.content }}></div> */}
                 </CardBody>
               </Card>
             </Col>
