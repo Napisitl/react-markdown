@@ -1,42 +1,37 @@
-/*!
-
-=========================================================
-* Now UI Dashboard React - v1.4.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/now-ui-dashboard-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/now-ui-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
-
-// reactstrap components
 import { Card, CardHeader, CardBody, Row, Col } from "reactstrap";
-
-// core components
 import PanelHeader from "components/PanelHeader/PanelHeader.js";
-
 import ReactMarkDown from "react-markdown";
-
+const ReactMarkdownWithHtml = require('react-markdown/with-html')
+const axios = require('axios');
 class FAQ extends React.Component {
 
   constructor(props) {
     super(props);
 
-    this.state={
-       content : null,
-       urlGitHubFile : ""
+    this.state = {
+      content: null,
+      urlGitHubFile: "https://github.com/Napisitl/react-markdown/blob/master/docs/FAQs.md"
     }
   }
 
+  // urlGitHubFile: "https://bryantson.github.io/reactjs-tutorials/react-markdown-viewer/docs/walkthrough.md"
+  componentDidMount() {
+
+    axios.get(this.state.urlGitHubFile)
+      .then(response => {
+        console.log("Get ReadMe Sccess ", response.data);
+        this.setState({ content: response.data })
+      }).catch(error => {
+        console.error("Error in axios call readme file")
+      });
+
+  }
+
   render() {
+
+    const { urlGitHubFile, content } = this.state;
+
     return (
       <>
         <PanelHeader size="sm" />
@@ -45,9 +40,8 @@ class FAQ extends React.Component {
             <Col md={12}>
               <Card>
                 <CardBody>
-                  asdasd
-                  asdasdasd
-                  asd
+                  {/* <ReactMarkDown source={content} /> */}
+                  <div dangerouslySetInnerHTML={{ __html: this.state.content }}></div>
                 </CardBody>
               </Card>
             </Col>
