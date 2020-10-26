@@ -1,8 +1,7 @@
 import React from "react";
-import { Card, CardHeader, CardBody, Row, Col } from "reactstrap";
+import { Card, CardBody, Row, Col } from "reactstrap";
 import PanelHeader from "components/PanelHeader/PanelHeader.js";
 import ReactMarkDown from "react-markdown";
-const ReactMarkdownWithHtml = require('react-markdown/with-html')
 const axios = require('axios');
 class FAQ extends React.Component {
 
@@ -11,7 +10,7 @@ class FAQ extends React.Component {
 
     this.state = {
       content: null,
-      urlGitHubFile: "https://github.com/Napisitl/react-markdown/blob/master/docs/FAQs.md"
+      urlGitHubFile: "https://github.com/serverless/serverless/blob/master/docs/getting-started.md"
     }
   }
 
@@ -30,7 +29,7 @@ class FAQ extends React.Component {
 
   render() {
 
-    const { urlGitHubFile, content } = this.state;
+    const { content } = this.state;
 
     return (
       <>
