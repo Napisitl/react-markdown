@@ -31,25 +31,69 @@ import ReferenceIndex from "views/ReferenceIndex.js";
 import WebProjects from "views/WebProjects.js";
 const axios = require('axios');
 
-function getMennu() {
-  axios.get(this.state.urlGitHubFile)
-    .then(response => {
-      console.log("Get ReadMe Sccess ", response.data);
-      this.setState({ content: response.data })
-    }).catch(error => {
-      console.error("Error in axios call readme file")
-    });
-}
+
+// function getMennu() {
+
+//   axios.get(this.state.urlGitHubFile)
+//     .then(response => {
+//       console.log("Get ReadMe Sccess ", response.data);
+//       this.setState({ content: response.data })
+//     }).catch(error => {
+//       console.error("Error in axios call readme file")
+//     });
+
+// }
+
+
+
+// var dashRoutes = [
+//   {
+//     "path": "/docs/",
+//     "name": "docs/",
+//     "icon": "location_map-big",
+//     "component": GettingStarted,
+//     "layout": "/admin",
+//     "menu": "https://sslabs-utility.s3-ap-southeast-1.amazonaws.com/docs/",
+//     "LastModified": "2020-10-26T07:36:31.000Z"
+//   },
+// ];
 
 var dashRoutes = [
   {
-    "path": "/docs/",
-    "name": "docs/",
-    "icon": "location_map-big",
-    "component": GettingStarted,
-    "layout": "/admin",
-    "menu": "https://sslabs-utility.s3-ap-southeast-1.amazonaws.com/docs/",
-    "LastModified": "2020-10-26T07:36:31.000Z"
+    path: "/fag",
+    name: "Getting Started",
+    icon: "location_map-big",
+    component: GettingStarted,
+    layout: "/admin",
   },
+  {
+    path: "/fag",
+    name: "FAQs",
+    icon: "location_map-big",
+    component: FAQ,
+    layout: "/admin",
+  },
+  {
+    path: "/apiProject",
+    name: "API Projects",
+    icon: "location_map-big",
+    component: APIProjects,
+    layout: "/admin",
+  },
+  {
+    path: "/referenceIndex",
+    name: "Reference",
+    icon: "location_map-big",
+    component: ReferenceIndex,
+    layout: "/admin",
+  },
+  {
+    path: "/webProjects",
+    name: "Web Projects",
+    icon: "location_map-big",
+    component: WebProjects,
+    layout: "/admin",
+  }
 ];
+
 export default dashRoutes;

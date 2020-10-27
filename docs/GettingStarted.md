@@ -26,7 +26,10 @@ Follow the instructions below to get started on SCB Developer Platform.
 	
 8. You will be redirected to the Project Dashboard page.
 
-### For Those Using SCB Developer Platform to deploy digital projects:
+
+![very good|512x397](https://sslabs-utility.s3-ap-southeast-1.amazonaws.com/docs_image/landing+page.png)
+
+### >>>>>  For Those Using SCB Developer Platform to deploy digital projects:
 
 **Step 2: Creating Your First Project**
 
