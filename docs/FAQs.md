@@ -12,13 +12,13 @@ Please see the instructions on [this page](www.google.com) to get started on you
 
 Please feel free to contact any of our team members:
 
-| Team Member | Position | Email |
+| Team Member XXX | Position | Email |
 
-######_Q: How do log out?_
+###### _Q: How do log out?_
 
-######_Q: What is _______
+###### _Q: What is _______
 
-######_Q: How can I deploy my project?_
+###### _Q: How can I deploy my project?_
 
 
 ### API Projects
