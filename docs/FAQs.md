@@ -13,10 +13,6 @@ Please see the instructions on [this page](www.google.com) to get started on you
 Please feel free to contact any of our team members:
 
 |Team Member|Position|Email|
-|----|-----------|---------|
-|Tor|Developer Lead|[samphan.pojanasophanakul@scb.co.th](mailto:samphan.pojanasophanakul@scb.co.th)|
-|Pun|Developer Lead|[attaphon.ongvisit@scb.co.th](mailto:attaphon.ongvisit@scb.co.th)|
-|Krieng|Business Lead|[kriengkri.pongpanjanthra@scb.co.th](mailto:kriengkri.pongpanjanthra@scb.co.th)|
 
 ######_Q: How do log out?_
 
