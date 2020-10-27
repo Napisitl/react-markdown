@@ -12,7 +12,7 @@ Please see the instructions on [this page](www.google.com) to get started on you
 
 Please feel free to contact any of our team members:
 
-|Team Member|Position|Email|
+| Team Member | Position | Email |
 
 ######_Q: How do log out?_
 
@@ -23,16 +23,16 @@ Please feel free to contact any of our team members:
 
 ### API Projects
 
-######_Q: What is included in each Code Template?_
+###### _Q: What is included in each Code Template?_
 
-######_Q: How can I deploy my project?_
+###### _Q: How can I deploy my project?_
 
 
 ### Web Projects
 
-######_Q: What is included in each Code Template?_
+###### _Q: What is included in each Code Template?_
 
-######_Q: How can I deploy my project?_
+###### _Q: How can I deploy my project?_
 
 
 
