@@ -12,30 +12,30 @@ Please see each language’s individual page for a detailed sample of what is in
 2. Java
 3. Python
 
-###Node.JS
+### Node.JS
 
-######Sample Code Template
-
-_Explanation of template here_ 
-
-_included libraries_ 
-
-######How to Start Using This Template
-
-###Java
-
-######Sample Code Template
+###### Sample Code Template
 
 _Explanation of template here_ 
 
 _included libraries_ 
 
-######How to Start Using This Template
+###### How to Start Using This Template
 
-###Python
+### Java
+
+###### Sample Code Template
 
 _Explanation of template here_ 
 
 _included libraries_ 
 
-######How to Start Using This Template
+###### How to Start Using This Template
+
+### Python
+
+_Explanation of template here_ 
+
+_included libraries_ 
+
+###### How to Start Using This Template

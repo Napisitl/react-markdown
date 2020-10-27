@@ -56,7 +56,7 @@ class FAQ extends React.Component {
                     escapeHtml={false}
                   // plugins={[toc]}
                   /> */}
-                  <div dangerouslySetInnerHTML={{ __html: this.state.content }}></div>
+                  {/* <div dangerouslySetInnerHTML={{ __html: this.state.content }}></div> */}
                 </CardBody>
               </Card>
             </Col>

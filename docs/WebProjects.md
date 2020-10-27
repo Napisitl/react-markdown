@@ -11,7 +11,7 @@ Please see each language’s individual page for a detailed sample of what is in
 1. React
 2. Angular
 
-###React
+### React
 
 _Explanation of template here_ 
 
@@ -19,9 +19,9 @@ _included libraries_
 
 _File Structure Overview_
 
-######How to Start Using This Template
+###### How to Start Using This Template
 
-###Angular
+### Angular
 
 _Explanation of template here_ 
 
@@ -29,4 +29,4 @@ _included libraries_
 
 _File Structure Overview_
 
-######How to Start Using This Template
+###### How to Start Using This Template

@@ -12,15 +12,15 @@ class FAQ extends React.Component {
 
     this.state = {
       content: null,
-      urlGitHubFile: "https://raw.githubusercontent.com/Napisitl/react-markdown/master/docs/FAQs.md"
-      // urlGitHubFile: "https://sslabs-utility.s3-ap-southeast-1.amazonaws.com/docs/FAQs.md"
+      // urlGitHubFile: "https://github.com/Napisitl/react-markdown/blob/master/docs/FAQs.md"
+      urlGitHubFile: "https://sslabs-utility.s3-ap-southeast-1.amazonaws.com/docs/FAQs.md"
     }
   }
 
-  // https://github.com/Napisitl/react-markdown/blob/master/docs/other_file.md
+  //https://github.com/Napisitl/react-markdown/blob/master/docs/other_file.md
   //https://sslabs-utility.s3-ap-southeast-1.amazonaws.com/docs/APIProjects.md
   //https://github.com/Napisitl/react-markdown/blob/master/docs/FAQs.md
-  // urlGitHubFile: "https://bryantson.github.io/reactjs-tutorials/react-markdown-viewer/docs/walkthrough.md"
+  //urlGitHubFile: "https://bryantson.github.io/reactjs-tutorials/react-markdown-viewer/docs/walkthrough.md"
 
   componentDidMount() {
 
@@ -48,14 +48,14 @@ class FAQ extends React.Component {
               <Card>
                 <CardBody>
                   {/* <ReactMarkdown escapeHtml={true} source={content} /> */}
-                  {/* <MarkdownPreview source={content} /> */}
-                  <ReactMarkdown
+                  <MarkdownPreview source={content} />
+                  {/* <ReactMarkdown
                     className="result"
                     source={content}
                     skipHtml={false}
                     escapeHtml={false}
                   // plugins={[toc]}
-                  />
+                  /> */}
                   {/* <div dangerouslySetInnerHTML={{ __html: this.state.content }}></div> */}
                 </CardBody>
               </Card>

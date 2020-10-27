@@ -29,107 +29,27 @@ import APIProjects from "views/APIProjects.js";
 // import Notifications from "views/Notifications.js";
 import ReferenceIndex from "views/ReferenceIndex.js";
 import WebProjects from "views/WebProjects.js";
+const axios = require('axios');
+
+function getMennu() {
+  axios.get(this.state.urlGitHubFile)
+    .then(response => {
+      console.log("Get ReadMe Sccess ", response.data);
+      this.setState({ content: response.data })
+    }).catch(error => {
+      console.error("Error in axios call readme file")
+    });
+}
 
 var dashRoutes = [
   {
-    path: "/get_started",
-    name: "Getting Started",
-    icon: "location_map-big",
-    component: GettingStarted,
-    layout: "/admin",
+    "path": "/docs/",
+    "name": "docs/",
+    "icon": "location_map-big",
+    "component": GettingStarted,
+    "layout": "/admin",
+    "menu": "https://sslabs-utility.s3-ap-southeast-1.amazonaws.com/docs/",
+    "LastModified": "2020-10-26T07:36:31.000Z"
   },
-  {
-    path: "/fag",
-    name: "FAQs",
-    icon: "location_map-big",
-    component: FAQ,
-    layout: "/admin",
-  },
-  {
-    path: "/apiProject",
-    name: "API Projects",
-    icon: "location_map-big",
-    component: APIProjects,
-    layout: "/admin",
-  },
-  {
-    path: "/referenceIndex",
-    name: "Reference",
-    icon: "location_map-big",
-    component: ReferenceIndex,
-    layout: "/admin",
-  },
-  {
-    path: "/webProjects",
-    name: "Web Projects",
-    icon: "location_map-big",
-    component: WebProjects,
-    layout: "/admin",
-  },
-
-  // {
-  //   path: "/dashboard",
-  //   name: "API Project",
-  //   icon: "files_paper",
-  //   component: Dashboard,
-  //   layout: "/adminh",
-  // },
-  // // {
-  // //   path: "/dashboard",
-  // //   name: "Dashboard",
-  // //   icon: "design_app",
-  // //   component: Dashboard,
-  // //   layout: "/admin",
-  // // },
-  // {
-  //   path: "/icons",
-  //   name: "Icons",
-  //   icon: "design_image",
-  //   component: Icons,
-  //   layout: "/admin",
-  // },
-  // {
-  //   path: "/maps",
-  //   name: "Maps",
-  //   icon: "location_map-big",
-  //   component: Maps,
-  //   layout: "/admin",
-  // },
-  // {
-  //   path: "/notifications",
-  //   name: "Notifications",
-  //   icon: "ui-1_bell-53",
-  //   component: Notifications,
-  //   layout: "/admin",
-  // },
-  // {
-  //   path: "/user-page",
-  //   name: "User Profile",
-  //   icon: "users_single-02",
-  //   component: UserPage,
-  //   layout: "/admin",
-  // },
-  // {
-  //   path: "/extended-tables",
-  //   name: "Table List",
-  //   icon: "files_paper",
-  //   component: TableList,
-  //   layout: "/admin",
-  // },
-  // {
-  //   path: "/typography",
-  //   name: "Typography",
-  //   icon: "design-2_ruler-pencil",
-  //   component: Typography,
-  //   layout: "/admin",
-  // },
-  // {
-  //   pro: true,
-  //   path: "/upgrade",
-  //   name: "Upgrade to PRO",
-  //   icon: "objects_spaceship",
-  //   component: Upgrade,
-  //   layout: "/admin",
-  // },
 ];
 export default dashRoutes;

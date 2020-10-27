@@ -4,7 +4,7 @@
 
 #### 2020
 
-#####_October_
+##### _October_
 
 Welcome to SCB Developer Platform October 2020 release. Please note key highlights in this release below:
 
@@ -16,10 +16,10 @@ How to Use
 
 
 
-#####_November_
+##### _November_
 
 
-#####_December_
+##### _December_
 
 
 --
@@ -88,4 +88,4 @@ How to Use
 |Service Endpoint|asdfasdf|
 |Ship|asdfasdfasdf|
 |Unit Testing|asdfadsf|
-|Versioning|asdfasdf|
+| Versioning | asdfasdf |

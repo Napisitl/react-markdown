@@ -1,6 +1,6 @@
-## <ins> Introduction </ins>
+# Introduction </ins>
 
-### [Getting Started](https://docs.google.com/document/d/1n83tS8ad29g8uCh9LJyMaMIe05R-ma3St9O_4s-el34/edit)
+## Getting Started
 
 SCB Developer Platform empowers developers to deploy code with zero downtime, through automating DevOps with its in-built infrastructure configurations and test frameworks. This documentation provides a quick overview of the platform, its features, and currently available code templates.
 
@@ -12,7 +12,7 @@ When signed up, you become a BETA user. In the near future, we will open up a NO
 
 Follow the instructions below to get started on SCB Developer Platform.
 
-1. Visit https://www.sslabs.sh/
+1. Visit [SS Labs Site](https://www.sslabs.sh/)
 2. Click on “Get Started with GitHub” button
 3. Sign into your GitHub account: enter your GitHub log in information: username or email address and password, to sign in. If you do not have a GitHub account, click on “Create an account” link to create one.
 4. Once signed in through GitHub, you will see the following landing page.
@@ -26,7 +26,7 @@ Follow the instructions below to get started on SCB Developer Platform.
 	
 8. You will be redirected to the Project Dashboard page.
 
-_For Those Using SCB Developer Platform to deploy digital projects:_
+### For Those Using SCB Developer Platform to deploy digital projects:
 
 **Step 2: Creating Your First Project**
 
@@ -34,9 +34,9 @@ _For Those Using SCB Developer Platform to deploy digital projects:_
 2. From the pop up on Project Dashboard screen, select “Create a Project Template” choice (RIGHT).
 3. Select from tabs below whether to create an API or Web template
 
-######API Template Tab:
+### API Template Tab:
 
-######Web Template Tab:
+### Web Template Tab:
 
 4. Fill in: Project name, Project description (optional). Note that “Owner” field is already pre-populated with your teamname and that only English and the special character “-” can be used. Click “Back to Project,” if you wish to return to the Project Dashboard page. (This will cancel the creation of a new project.)
 5. When done, click on the “Let’s code” button.
@@ -52,7 +52,7 @@ Once provisioning is completed, each box's circle will display a tickmark.
 
 	* Project Count: The current number of projects
 	* For each project, in its own row (from LEFT to RIGHT): 
-		* 	status (provisioning or running)
+		* 	status (provisioning or running****)
 		*  type (API or Web app)
 		*  a button to "View Project" which takes you to its "Project Detail" page
 
@@ -71,8 +71,7 @@ A sample application log in DataDog looks like this:
 A sample project's GitHub page looks like this:
 
 
-
-_For Those Using SCB Developer Platform to Host GitHub Repository:_
+### For Those Using SCB Developer Platform to Host GitHub Repository:_
 
 **Step 2: Creating Your First Code Repository**
 
@@ -85,9 +84,6 @@ _For Those Using SCB Developer Platform to Host GitHub Repository:_
 	* Note that “Owner” field is already pre-populated with your teamname and that only English and the special character “-” can be used. Click “Back to Project,” if you wish to return to the Project Dashboard page. (This will cancel the creation of a new project.)
 
 4. When done, click on the “Let’s code” button. 
-
-#PROVISIONING? 
-
 
 5. You will be redirected back to the Project Dashboard page. Notice that the Blank project row on the Project Dashboard page displays a “Completed” instead of “Running” status, and redirects to “GitHub” (Code Repo) instead of to the Web or API.
 
@@ -107,11 +103,3 @@ Currently SCB Developer Platform allows you to create the projects in the follow
 2. Web Projects
 	* React
 	* Angular
-
-
-
-
-
-
-
-
